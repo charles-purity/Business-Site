@@ -1,12 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 /*----------Navigation Bar-------------------------*/
 #nav-bar{
     position: sticky;
     top: 0;
-    z-index: 10; 
+    z-index: 2; 
 }
 
 .navbar-nav li {
@@ -37,22 +38,49 @@
     font-size: 16px;
 }
 
-/*----------------------slider-------------------------*/
-#slider {
+/* --------background-image--------- */
+
+
+#background {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/banner\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
+    height: 100vh;
 }
 
-.carousel-caption {
-    top: 50%;
-    transform: translateY(-50);
-    bottom: initial!important;
+.title h2 {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: #ffff !important;
+    font-weight: bolder;
+    font-size: 4rem;
+
 }
 
-.carousel-caption h5 {
-    color: grey;
-    font-size: 42px;
-    font-weight: 1000;
+.button  {
+    top: 70%;
+    left: 48%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    
+    
+}
 
+.button-click { 
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: #000 !important;
+    padding: 10px 30px;
+    margin-right: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(to left,#fff,#007bff);
+    border-radius: 30px;
+ 
+    
 }
 
 /*----------------about----------------------*/
@@ -237,6 +265,10 @@ h1::after{
 
 .img-box ul, .img-box ul li {
     transition: 0.5s;
+}
+
+#team img{
+    border-radius: 20px;
 }
 /*---------promo--------*/
 #promo {
